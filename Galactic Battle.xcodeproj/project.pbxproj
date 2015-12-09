@@ -16,6 +16,10 @@
 		6B1B65AF1BAE2E5E0027ABF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B65AD1BAE2E5E0027ABF1 /* LaunchScreen.storyboard */; };
 		6B1B65BA1BAE2E5E0027ABF1 /* Galactic_BattleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B65B91BAE2E5E0027ABF1 /* Galactic_BattleTests.swift */; };
 		6B1B65C51BAE2E5E0027ABF1 /* Galactic_BattleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B65C41BAE2E5E0027ABF1 /* Galactic_BattleUITests.swift */; };
+		6B5992D51C18F34400428CDA /* space_title.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B5992D41C18F34400428CDA /* space_title.jpg */; };
+		6B5992D71C18F34D00428CDA /* space_rules.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B5992D61C18F34D00428CDA /* space_rules.jpg */; };
+		6B5992D91C18F35300428CDA /* space_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B5992D81C18F35300428CDA /* space_background.jpg */; };
+		6BEC28181BC14FF200A0017F /* Spaceship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEC28171BC14FF200A0017F /* Spaceship.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		6B1B65C01BAE2E5E0027ABF1 /* Galactic BattleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Galactic BattleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B1B65C41BAE2E5E0027ABF1 /* Galactic_BattleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Galactic_BattleUITests.swift; sourceTree = "<group>"; };
 		6B1B65C61BAE2E5E0027ABF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B5992D41C18F34400428CDA /* space_title.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = space_title.jpg; path = Assets.xcassets/space_title.jpg; sourceTree = "<group>"; };
+		6B5992D61C18F34D00428CDA /* space_rules.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = space_rules.jpg; path = Assets.xcassets/space_rules.jpg; sourceTree = "<group>"; };
+		6B5992D81C18F35300428CDA /* space_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = space_background.jpg; path = Assets.xcassets/space_background.jpg; sourceTree = "<group>"; };
+		6BEC28171BC14FF200A0017F /* Spaceship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spaceship.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +112,11 @@
 				6B1B65A01BAE2E5E0027ABF1 /* AppDelegate.swift */,
 				6B1B65A21BAE2E5E0027ABF1 /* GameScene.sks */,
 				6B1B65A41BAE2E5E0027ABF1 /* GameScene.swift */,
+				6BEC28171BC14FF200A0017F /* Spaceship.swift */,
 				6B1B65A61BAE2E5E0027ABF1 /* GameViewController.swift */,
 				6B1B65A81BAE2E5E0027ABF1 /* Main.storyboard */,
 				6B1B65AB1BAE2E5E0027ABF1 /* Assets.xcassets */,
+				6B5992DA1C18F38B00428CDA /* Supporting Files */,
 				6B1B65AD1BAE2E5E0027ABF1 /* LaunchScreen.storyboard */,
 				6B1B65B01BAE2E5E0027ABF1 /* Info.plist */,
 			);
@@ -129,6 +139,16 @@
 				6B1B65C61BAE2E5E0027ABF1 /* Info.plist */,
 			);
 			path = "Galactic BattleUITests";
+			sourceTree = "<group>";
+		};
+		6B5992DA1C18F38B00428CDA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B5992D61C18F34D00428CDA /* space_rules.jpg */,
+				6B5992D41C18F34400428CDA /* space_title.jpg */,
+				6B5992D81C18F35300428CDA /* space_background.jpg */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +256,9 @@
 			files = (
 				6B1B65A31BAE2E5E0027ABF1 /* GameScene.sks in Resources */,
 				6B1B65AF1BAE2E5E0027ABF1 /* LaunchScreen.storyboard in Resources */,
+				6B5992D71C18F34D00428CDA /* space_rules.jpg in Resources */,
+				6B5992D51C18F34400428CDA /* space_title.jpg in Resources */,
+				6B5992D91C18F35300428CDA /* space_background.jpg in Resources */,
 				6B1B65AC1BAE2E5E0027ABF1 /* Assets.xcassets in Resources */,
 				6B1B65AA1BAE2E5E0027ABF1 /* Main.storyboard in Resources */,
 			);
@@ -264,6 +287,7 @@
 			files = (
 				6B1B65A51BAE2E5E0027ABF1 /* GameScene.swift in Sources */,
 				6B1B65A71BAE2E5E0027ABF1 /* GameViewController.swift in Sources */,
+				6BEC28181BC14FF200A0017F /* Spaceship.swift in Sources */,
 				6B1B65A11BAE2E5E0027ABF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,6 +517,7 @@
 				6B1B65CB1BAE2E5E0027ABF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B1B65CC1BAE2E5E0027ABF1 /* Build configuration list for PBXNativeTarget "Galactic BattleTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +526,7 @@
 				6B1B65CE1BAE2E5E0027ABF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B1B65CF1BAE2E5E0027ABF1 /* Build configuration list for PBXNativeTarget "Galactic BattleUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +535,7 @@
 				6B1B65D11BAE2E5E0027ABF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

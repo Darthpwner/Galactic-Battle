@@ -8,9 +8,12 @@
 
 import UIKit
 import SpriteKit
+import CoreMotion
 
 class GameViewController: UIViewController {
 
+    let SENSITIVITY = 4;    //Constant for the sensitivity of the accelerometer
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,6 +31,11 @@ class GameViewController: UIViewController {
             
             skView.presentScene(scene)
         }
+    }
+    
+    //Used to control movement in the game
+    func update(time: NSTimeInterval) -> Void {
+        
     }
 
     override func shouldAutorotate() -> Bool {
