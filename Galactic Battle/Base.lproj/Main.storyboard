@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mZ2-Yn-8lc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Rules Page-->
@@ -39,16 +41,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="space_title.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Al8-WE-JiD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="space_title.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Al8-WE-JiD">
                                 <rect key="frame" x="0.0" y="0.0" width="609" height="600"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Galactic Battle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lh8-um-zbO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Galactic Battle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lh8-um-zbO">
                                 <rect key="frame" x="104" y="38" width="470" height="103"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="72"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcw-dX-SBY">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcw-dX-SBY">
                                 <rect key="frame" x="274" y="441" width="130" height="85"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <state key="normal" title="Start">
@@ -58,10 +60,10 @@
                                     <segue destination="BV1-FR-VrT" kind="show" id="vui-1S-ht5"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Spaceship" translatesAutoresizingMaskIntoConstraints="NO" id="bJF-1n-sYc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Spaceship" translatesAutoresizingMaskIntoConstraints="NO" id="bJF-1n-sYc">
                                 <rect key="frame" x="184" y="209" width="240" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wn-yG-gaZ" userLabel="Rules Button">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wn-yG-gaZ" userLabel="Rules Button">
                                 <rect key="frame" x="289" y="264" width="30" height="30"/>
                                 <connections>
                                     <segue destination="xob-9L-8vb" kind="show" id="Gq0-K5-Y0Q"/>
@@ -69,6 +71,40 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Al8-WE-JiD" firstAttribute="top" secondItem="5BY-mw-Skk" secondAttribute="bottom" constant="-20" id="0RT-hL-3dT"/>
+                            <constraint firstItem="Al8-WE-JiD" firstAttribute="centerX" secondItem="Z54-EZ-PLe" secondAttribute="centerX" id="1JX-7z-i2M"/>
+                            <constraint firstItem="Al8-WE-JiD" firstAttribute="centerY" secondItem="Z54-EZ-PLe" secondAttribute="centerY" id="4Jq-qE-v8M"/>
+                            <constraint firstItem="lh8-um-zbO" firstAttribute="centerY" secondItem="Z54-EZ-PLe" secondAttribute="centerY" id="5Yr-zB-YxP"/>
+                            <constraint firstItem="6wn-yG-gaZ" firstAttribute="top" secondItem="lh8-um-zbO" secondAttribute="bottom" multiplier="1.25" id="Gu8-2b-uLX"/>
+                            <constraint firstItem="bJF-1n-sYc" firstAttribute="centerX" secondItem="Z54-EZ-PLe" secondAttribute="centerX" id="IcA-ir-BkU"/>
+                            <constraint firstItem="Al8-WE-JiD" firstAttribute="leading" secondItem="Z54-EZ-PLe" secondAttribute="leadingMargin" constant="-20" id="JBh-9O-k1z"/>
+                            <constraint firstItem="Al8-WE-JiD" firstAttribute="centerX" secondItem="Z54-EZ-PLe" secondAttribute="centerX" id="PqF-SW-tsc"/>
+                            <constraint firstItem="Al8-WE-JiD" firstAttribute="leading" secondItem="Z54-EZ-PLe" secondAttribute="leadingMargin" constant="-20" id="QkO-7c-nz6"/>
+                            <constraint firstItem="Al8-WE-JiD" firstAttribute="top" secondItem="5BY-mw-Skk" secondAttribute="bottom" constant="-20" id="RH0-Dg-Rw2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Al8-WE-JiD" secondAttribute="trailing" constant="-29" id="VOu-KI-ZU5"/>
+                            <constraint firstItem="bJF-1n-sYc" firstAttribute="centerY" secondItem="Z54-EZ-PLe" secondAttribute="centerY" id="cMy-LZ-mhH"/>
+                            <constraint firstItem="lh8-um-zbO" firstAttribute="centerX" secondItem="Z54-EZ-PLe" secondAttribute="centerX" id="dqQ-Mo-pHj"/>
+                            <constraint firstItem="Al8-WE-JiD" firstAttribute="centerY" secondItem="Z54-EZ-PLe" secondAttribute="centerY" id="f1t-jm-ifG"/>
+                            <constraint firstItem="ERZ-D7-KiU" firstAttribute="top" secondItem="Al8-WE-JiD" secondAttribute="bottom" id="hB3-fR-bTv"/>
+                            <constraint firstItem="gcw-dX-SBY" firstAttribute="centerX" secondItem="Z54-EZ-PLe" secondAttribute="centerX" id="ngc-6E-fg2"/>
+                            <constraint firstItem="ERZ-D7-KiU" firstAttribute="top" secondItem="Al8-WE-JiD" secondAttribute="bottom" id="vsE-6U-5cH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Al8-WE-JiD" secondAttribute="trailing" constant="-29" id="yh0-CO-QfP"/>
+                            <constraint firstItem="gcw-dX-SBY" firstAttribute="top" secondItem="bJF-1n-sYc" secondAttribute="bottom" multiplier="0.75" id="zzN-eS-dqc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0RT-hL-3dT"/>
+                                <exclude reference="4Jq-qE-v8M"/>
+                                <exclude reference="JBh-9O-k1z"/>
+                                <exclude reference="PqF-SW-tsc"/>
+                                <exclude reference="QkO-7c-nz6"/>
+                                <exclude reference="VOu-KI-ZU5"/>
+                                <exclude reference="yh0-CO-QfP"/>
+                                <exclude reference="5Yr-zB-YxP"/>
+                                <exclude reference="vsE-6U-5cH"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xJH-0t-ide" userLabel="First Responder" sceneMemberID="firstResponder"/>
