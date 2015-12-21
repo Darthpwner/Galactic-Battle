@@ -16,6 +16,9 @@
 		6B1B65AF1BAE2E5E0027ABF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B65AD1BAE2E5E0027ABF1 /* LaunchScreen.storyboard */; };
 		6B1B65BA1BAE2E5E0027ABF1 /* Galactic_BattleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B65B91BAE2E5E0027ABF1 /* Galactic_BattleTests.swift */; };
 		6B1B65C51BAE2E5E0027ABF1 /* Galactic_BattleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B65C41BAE2E5E0027ABF1 /* Galactic_BattleUITests.swift */; };
+		6B3FE93D1C27BE6E00FDAB2F /* TitlePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3FE93C1C27BE6E00FDAB2F /* TitlePageViewController.swift */; };
+		6B3FE9431C27BF9700FDAB2F /* PlayStartSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3FE9421C27BF9700FDAB2F /* PlayStartSong.swift */; };
+		6B3FE9461C27BFF700FDAB2F /* Star Wars Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B3FE9451C27BFF700FDAB2F /* Star Wars Intro.mp3 */; };
 		6B5992D51C18F34400428CDA /* space_title.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B5992D41C18F34400428CDA /* space_title.jpg */; };
 		6B5992D71C18F34D00428CDA /* space_rules.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B5992D61C18F34D00428CDA /* space_rules.jpg */; };
 		6B5992D91C18F35300428CDA /* space_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B5992D81C18F35300428CDA /* space_background.jpg */; };
@@ -44,7 +47,7 @@
 		6B1B65A01BAE2E5E0027ABF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B1B65A21BAE2E5E0027ABF1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		6B1B65A41BAE2E5E0027ABF1 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		6B1B65A61BAE2E5E0027ABF1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		6B1B65A61BAE2E5E0027ABF1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = "Galactic Battle/GameViewController.swift"; sourceTree = "<group>"; };
 		6B1B65A91BAE2E5E0027ABF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B1B65AB1BAE2E5E0027ABF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B1B65AE1BAE2E5E0027ABF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +58,9 @@
 		6B1B65C01BAE2E5E0027ABF1 /* Galactic BattleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Galactic BattleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B1B65C41BAE2E5E0027ABF1 /* Galactic_BattleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Galactic_BattleUITests.swift; sourceTree = "<group>"; };
 		6B1B65C61BAE2E5E0027ABF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B3FE93C1C27BE6E00FDAB2F /* TitlePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitlePageViewController.swift; sourceTree = "<group>"; };
+		6B3FE9421C27BF9700FDAB2F /* PlayStartSong.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayStartSong.swift; sourceTree = "<group>"; };
+		6B3FE9451C27BFF700FDAB2F /* Star Wars Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Star Wars Intro.mp3"; path = "../../../Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Star Wars Intro.mp3"; sourceTree = "<group>"; };
 		6B5992D41C18F34400428CDA /* space_title.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = space_title.jpg; path = Assets.xcassets/space_title.jpg; sourceTree = "<group>"; };
 		6B5992D61C18F34D00428CDA /* space_rules.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = space_rules.jpg; path = Assets.xcassets/space_rules.jpg; sourceTree = "<group>"; };
 		6B5992D81C18F35300428CDA /* space_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = space_background.jpg; path = Assets.xcassets/space_background.jpg; sourceTree = "<group>"; };
@@ -110,12 +116,13 @@
 			isa = PBXGroup;
 			children = (
 				6B1B65A01BAE2E5E0027ABF1 /* AppDelegate.swift */,
-				6B1B65A21BAE2E5E0027ABF1 /* GameScene.sks */,
-				6B1B65A41BAE2E5E0027ABF1 /* GameScene.swift */,
-				6BEC28171BC14FF200A0017F /* Spaceship.swift */,
-				6B1B65A61BAE2E5E0027ABF1 /* GameViewController.swift */,
+				6B3FE93F1C27BF3500FDAB2F /* Controller */,
+				6B3FE93E1C27BF2700FDAB2F /* Model */,
 				6B1B65A81BAE2E5E0027ABF1 /* Main.storyboard */,
+				6B3FE9401C27BF5C00FDAB2F /* View */,
 				6B1B65AB1BAE2E5E0027ABF1 /* Assets.xcassets */,
+				6B3FE9441C27BFD800FDAB2F /* Sounds */,
+				6B3FE9411C27BF8300FDAB2F /* Singletons */,
 				6B5992DA1C18F38B00428CDA /* Supporting Files */,
 				6B1B65AD1BAE2E5E0027ABF1 /* LaunchScreen.storyboard */,
 				6B1B65B01BAE2E5E0027ABF1 /* Info.plist */,
@@ -139,6 +146,49 @@
 				6B1B65C61BAE2E5E0027ABF1 /* Info.plist */,
 			);
 			path = "Galactic BattleUITests";
+			sourceTree = "<group>";
+		};
+		6B3FE93E1C27BF2700FDAB2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6BEC28171BC14FF200A0017F /* Spaceship.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6B3FE93F1C27BF3500FDAB2F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6B3FE93C1C27BE6E00FDAB2F /* TitlePageViewController.swift */,
+				6B1B65A61BAE2E5E0027ABF1 /* GameViewController.swift */,
+			);
+			name = Controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		6B3FE9401C27BF5C00FDAB2F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B65A21BAE2E5E0027ABF1 /* GameScene.sks */,
+				6B1B65A41BAE2E5E0027ABF1 /* GameScene.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6B3FE9411C27BF8300FDAB2F /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				6B3FE9421C27BF9700FDAB2F /* PlayStartSong.swift */,
+			);
+			name = Singletons;
+			sourceTree = "<group>";
+		};
+		6B3FE9441C27BFD800FDAB2F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6B3FE9451C27BFF700FDAB2F /* Star Wars Intro.mp3 */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 		6B5992DA1C18F38B00428CDA /* Supporting Files */ = {
@@ -258,6 +308,7 @@
 				6B1B65AF1BAE2E5E0027ABF1 /* LaunchScreen.storyboard in Resources */,
 				6B5992D71C18F34D00428CDA /* space_rules.jpg in Resources */,
 				6B5992D51C18F34400428CDA /* space_title.jpg in Resources */,
+				6B3FE9461C27BFF700FDAB2F /* Star Wars Intro.mp3 in Resources */,
 				6B5992D91C18F35300428CDA /* space_background.jpg in Resources */,
 				6B1B65AC1BAE2E5E0027ABF1 /* Assets.xcassets in Resources */,
 				6B1B65AA1BAE2E5E0027ABF1 /* Main.storyboard in Resources */,
@@ -286,9 +337,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B1B65A51BAE2E5E0027ABF1 /* GameScene.swift in Sources */,
+				6B3FE9431C27BF9700FDAB2F /* PlayStartSong.swift in Sources */,
 				6B1B65A71BAE2E5E0027ABF1 /* GameViewController.swift in Sources */,
 				6BEC28181BC14FF200A0017F /* Spaceship.swift in Sources */,
 				6B1B65A11BAE2E5E0027ABF1 /* AppDelegate.swift in Sources */,
+				6B3FE93D1C27BE6E00FDAB2F /* TitlePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

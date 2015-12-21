@@ -33,7 +33,7 @@
         <!--Title Page-->
         <scene sceneID="91m-BB-4DV">
             <objects>
-                <viewController title="Title Page" id="mZ2-Yn-8lc" sceneMemberID="viewController">
+                <viewController title="Title Page" id="mZ2-Yn-8lc" customClass="TitlePageViewController" customModule="Galactic_Battle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5BY-mw-Skk"/>
                         <viewControllerLayoutGuide type="bottom" id="ERZ-D7-KiU"/>
@@ -61,7 +61,7 @@
                                     <segue destination="BV1-FR-VrT" kind="show" id="vui-1S-ht5"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spaceship" translatesAutoresizingMaskIntoConstraints="NO" id="bJF-1n-sYc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spaceship" translatesAutoresizingMaskIntoConstraints="NO" id="bJF-1n-sYc" customClass="TitlePage">
                                 <rect key="frame" x="75" y="201" width="450" height="198"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wn-yG-gaZ" userLabel="Rules Button">
