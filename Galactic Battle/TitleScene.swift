@@ -1,16 +1,16 @@
 //
-//  GameScene.swift
+//  TitleScene.swift
 //  Galactic Battle
 //
-//  Created by Matthew Allen Lin on 9/19/15.
-//  Copyright (c) 2015 MAL Software. All rights reserved.
+//  Created by Matthew Allen Lin on 12/20/15.
+//  Copyright © 2015 MAL Software. All rights reserved.
 //
 
+import Foundation
 import SpriteKit
 
-class GameScene: SKScene {
+class TitleScene: SKScene {
     override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
         let sprite = SKSpriteNode(imageNamed:"Spaceship")
         
         sprite.xScale = 0.5
@@ -23,7 +23,7 @@ class GameScene: SKScene {
         
         self.addChild(sprite)
     }
-   
+    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
     }
