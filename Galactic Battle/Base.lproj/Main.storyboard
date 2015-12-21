@@ -107,6 +107,12 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="5Yr-zB-YxP"/>
+                                <exclude reference="jvp-df-9q5"/>
+                                <exclude reference="TM5-Tj-mKE"/>
+                                <exclude reference="H5C-IP-Niy"/>
+                                <exclude reference="jq0-x4-WpH"/>
+                                <exclude reference="vsE-6U-5cH"/>
                                 <exclude reference="0RT-hL-3dT"/>
                                 <exclude reference="4Jq-qE-v8M"/>
                                 <exclude reference="JBh-9O-k1z"/>
@@ -114,12 +120,6 @@
                                 <exclude reference="QkO-7c-nz6"/>
                                 <exclude reference="VOu-KI-ZU5"/>
                                 <exclude reference="yh0-CO-QfP"/>
-                                <exclude reference="5Yr-zB-YxP"/>
-                                <exclude reference="jvp-df-9q5"/>
-                                <exclude reference="TM5-Tj-mKE"/>
-                                <exclude reference="H5C-IP-Niy"/>
-                                <exclude reference="jq0-x4-WpH"/>
-                                <exclude reference="vsE-6U-5cH"/>
                             </mask>
                         </variation>
                     </view>

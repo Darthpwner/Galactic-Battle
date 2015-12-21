@@ -6,7 +6,6 @@
 //  Copyright © 2015 MAL Software. All rights reserved.
 //
 
-import Foundation
 import SpriteKit
 
 class TitleScene: SKScene {
